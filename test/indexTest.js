@@ -65,7 +65,7 @@ describe('index.js', () => {
       let spy = sinon.spy(Array.prototype, 'map');
       nameToAttributes(drivers);
       expect(
-        spy.calledOnce,
+        spy.called,
         'map was not called in nameToAttributes()'
       ).to.equal(true);
     });

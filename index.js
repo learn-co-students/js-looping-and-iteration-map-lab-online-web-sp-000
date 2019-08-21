@@ -12,8 +12,7 @@ function nameToAttributes(drivers)
 {   
     return drivers.map(function (driver)
     {
-        //var name =  driver.split(" ");
-        return Object.assign( {}, {firstName: driver.split(" ")[0]}, {lastName: driver.split(" ")[1]});
+         return Object.assign( {}, {firstName: driver.split(" ")[0]}, {lastName: driver.split(" ")[1]});
     });
 }
  
